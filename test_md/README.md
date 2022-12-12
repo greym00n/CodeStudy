@@ -132,6 +132,7 @@ You will see Subscriber is taking the topics (e.g., Squares).
 ![](https://i.imgur.com/q1K4MFj.png)
 - Place license file in your folder and set `TWINOAKS_LICENSE_FILE` to your license file location.  
 `export TWINOAKS_LICENSE_FILE=LICENSE_FILE` 
+![](https://i.imgur.com/5uAuPlK.png)  
 ## Basic example (helloworld)
 - Go to example folder   
 `cd examples/hello_c`  
