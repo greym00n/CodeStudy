@@ -4,7 +4,7 @@
 There are two options for installation: (1) using docker and (2) building from the source.
 
 ## Install using docker 
-1. Download docker container image from [here](https://www.eprosima.com/index.php/products-all)
+1. Download docker container image from [here](https://www.eprosima.com/index.php/products-all).  
 It may require sign-in.   
 If you have an issue in sign-in, use my downloaded file [here](https://drive.google.com/file/d/1HWA3HtUTRzZTBLRTSPfsUrWhmHLk6pPM/view?usp=share_link).
 ![](https://i.imgur.com/HMBOBu1.png)
@@ -125,9 +125,24 @@ You will see Subscriber is taking the topics (e.g., Squares).
 # CoreDX DDS (**Not** open-source)
 - [Link](http://www.twinoakscomputing.com/coredx/download)
 ## Installation
+- After you register it, CoreDX license manager will send a license file.
+  - You need to use your university email address (they will require).
+  - It takes 1~2 business day usually.
+- Download CoreDX DDS from the webpage.
 ![](https://i.imgur.com/q1K4MFj.png)
+- Place license file in your folder and set `TWINOAKS_LICENSE_FILE` to your license file location.  
+`export TWINOAKS_LICENSE_FILE=LICENSE_FILE` 
+## Basic example (helloworld)
+- Go to example folder   
+`cd examples/hello_c`  
+- Set `COREDX_TOP`, `COREDX_HOST`, `COREDX_TARGET` to your own directory for `Makefile`.  
+`make`  
+- Run pub-sub example 
+  - Terminal #1: Publisher  
+`./hello_pub`
+  - Terminal #2: Subsriber  
+`./hello_sub`
 
-## Basic example
 
 # GurumDDS (**Not** open-source)
 - [Link](https://gurum.cc/)
